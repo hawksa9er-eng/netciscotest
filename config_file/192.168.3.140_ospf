@@ -1,0 +1,4 @@
+conf terminal
+router ospf 1
+ network 172.16.0.1  0.0.0.254  area 0 
+do wr 

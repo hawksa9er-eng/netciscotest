@@ -1,0 +1,5 @@
+router ospf 1
+{% for net in netowrk %}
+ network {{net}} {% for wild in wildcard_mask %} {{ wild }} {% endfor %} area 0 
+{% endfor %}
+do wr 

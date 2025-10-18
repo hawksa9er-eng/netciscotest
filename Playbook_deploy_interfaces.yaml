@@ -1,0 +1,18 @@
+---
+- name: Show interface brief and save it into txt file 
+  hosts: cisco
+  gather_facts: false
+  connection: local
+
+  vars: 
+   ansible_user: "{{ awx_user }}" 
+   ansible_password: "{{ awx_user }}"
+
+  tasks:
+   - name: 
+     ios_command:
+       commands:
+         - show ip int br  
+     register: config
+     
+...
