@@ -6,7 +6,7 @@
 
   vars: 
    ansible_user: "{{ awx_user }}" 
-   ansible_password: "{{ awx_user }}"
+   ansible_password: "{{ awx_pass }}"
 
   tasks:
    - name: 
