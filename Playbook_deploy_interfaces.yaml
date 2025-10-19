@@ -1,6 +1,6 @@
 ---
 - name: Show interface brief and save it into txt file 
-  hosts: cisco
+  hosts: all
   gather_facts: false
   connection: network_cli
 
